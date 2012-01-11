@@ -66,6 +66,9 @@
 				<targetPath>NATIVE/${os.arch}/${os.name}</targetPath>
 				<directory>${basedir}/src/.libs</directory>
 				<includes>
+					<include>libzmq.so*</include>
+					<include>libzmq.dylib</include>
+					<include>libzmq.dll</include>
 					<include>libjzmq.so</include>
 					<include>libjzmq.dylib</include>
 					<include>libjzmq.dll</include>
