@@ -5,11 +5,17 @@ Summary:       The Java ZeroMQ bindings
 Group:         Applications/Internet
 License:       LGPLv3+
 URL:           http://www.zeromq.org/
-Source:        https://github.com/datasift/%{name}/archive/v%{version}.tar.gz
+Source:        https://codeload.github.com/datasift/%{name}/tar.gz/v%{version}
 Prefix:        %{_prefix}
 Buildroot:     %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires: gcc, make, gcc-c++, libstdc++-devel
-Requires:      libstdc++, zeromq
+BuildRequires: libzmq-devel >= 4.0.4
+BuildRequires: pkgconfig
+BuildRequires: libtool
+BuildRequires: make 
+BuildRequires: gcc48-c++
+BuildRequires: java-1.6.0-openjdk
+BuildRequires: java-1.6.0-openjdk-devel
+# Requires:      libstdc++, libzmq
 
 %description
 The 0MQ lightweight messaging kernel is a library which extends the
@@ -69,6 +75,7 @@ This package contains Java Bindings for ZeroMQ related development libraries and
 # libraries
 %{_libdir}/libjzmq.so*
 /usr/share/java/zmq.jar
+/usr/share/perf/zmq-perf.jar
 
 %files devel
 %defattr(-,root,root,-)
