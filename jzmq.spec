@@ -5,7 +5,7 @@ Summary:       The Java ZeroMQ bindings
 Group:         Applications/Internet
 License:       LGPLv3+
 URL:           http://www.zeromq.org/
-Source:        http://www.zeromq.org/local--files/area:download/%{name}-%{version}.tar.gz
+Source:        https://github.com/datasift/%{name}/archive/v%{version}.tar.gz
 Prefix:        %{_prefix}
 Buildroot:     %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: gcc, make, gcc-c++, libstdc++-devel
