@@ -8,7 +8,7 @@
   </parent>
   <groupId>org.zeromq</groupId>
   <artifactId>jzmq4</artifactId>
-  <version>4.0.1-SNAPSHOT</version>
+  <version>4.0.4.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>jzmq</name>
   <description>
