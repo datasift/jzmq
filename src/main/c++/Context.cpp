@@ -107,7 +107,7 @@ Java_org_zeromq_ZMQ_00024Context_setIPv6 (JNIEnv * env, jobject obj, jint enable
     void *c = get_context (env, obj);
     if (! c)
     return JNI_FALSE;
-    int result = zmq_ctx_set (c, ZMQ_IPV6, maxSockets);
+    int result = zmq_ctx_set (c, ZMQ_IPV6, enabled);
     return result == 0;
 #else
     return JNI_FALSE;
