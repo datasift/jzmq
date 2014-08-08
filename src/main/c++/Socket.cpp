@@ -191,6 +191,7 @@ Java_org_zeromq_ZMQ_00024Socket_getLongSockopt (JNIEnv *env, jobject obj, jint o
     case ZMQ_CONFLATE:
     case ZMQ_PLAIN_SERVER:
     case ZMQ_IMMEDIATE:
+    case ZMQ_IPV6:
 #endif
     case ZMQ_AFFINITY:
     case ZMQ_RATE:
@@ -327,6 +328,7 @@ JNIEXPORT void JNICALL Java_org_zeromq_ZMQ_00024Socket_setLongSockopt (JNIEnv *e
     case ZMQ_CONFLATE:
     case ZMQ_PLAIN_SERVER:
     case ZMQ_IMMEDIATE:
+    case ZMQ_IPV6:
 #endif
     case ZMQ_AFFINITY:
     case ZMQ_RATE:
@@ -379,6 +381,7 @@ JNIEXPORT void JNICALL Java_org_zeromq_ZMQ_00024Socket_setLongSockopt (JNIEnv *e
                 || (option == ZMQ_CONFLATE)
                 || (option == ZMQ_PLAIN_SERVER)
                 || (option == ZMQ_IMMEDIATE)
+                || (option == ZMQ_IPV6)
 #endif
 #if ZMQ_VERSION >= ZMQ_MAKE_VERSION(4,1,0)
                 || (option == ZMQ_GSSAPI_SERVER)

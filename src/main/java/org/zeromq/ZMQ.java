@@ -852,6 +852,15 @@ public class ZMQ {
         }
 
         /**
+         * @see #setIPv6(boolean)
+         *
+         * @return the IPv6 socket.
+         */
+        public boolean getIPv6() {
+            return getLongSockopt(IPV6) == 1;
+        }
+
+        /**
          * @see #setIPv4Only(boolean)
          *
          * @return the IPv4 only socket.
@@ -1224,6 +1233,16 @@ public class ZMQ {
          */
         public void setReceiveBufferSize(long rcvbuf) {
             setLongSockopt(RCVBUF, rcvbuf);
+        }
+
+        /**
+         * The 'ZMQ_IPV6' option shall set the underlying native socket type. An IPv6 socket lets applications
+         * connect to and accept connections from both IPv4 and IPv6 hosts.
+         * 
+         * @param v6 A value of true will use IPv6 sockets, while the value of false will use IPv4 sockets
+         */
+        public void setIPv6(boolean v6) {
+            setLongSockopt(IPV6, v6 ? 1L : 0L);
         }
 
         /**
@@ -1764,6 +1783,7 @@ public class ZMQ {
         private static final int KEEPALIVEINTVL = 37;
         private static final int IMMEDIATE = 39;
         private static final int XPUB_VERBOSE = 40;
+        private static final int IPV6 = 42;
         private static final int PLAIN_SERVER = 44;
         private static final int PLAIN_USERNAME = 45;
         private static final int PLAIN_PASSWORD = 46;
