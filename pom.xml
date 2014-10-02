@@ -70,7 +70,7 @@
       </activation>
       <properties>
 	<native.os>${os.name}</native.os>
-	<native.path>src/main/c++/.libs/libjzmq.so</native.path>
+	<native.path>src/main/c++/.libs/lib${project.artifactId}.so</native.path>
 	<!-- Use platform-specific path separators here: -->
 	<native.library-path>src/main/c++/.libs/</native.library-path>
       </properties>
@@ -84,7 +84,7 @@
       </activation>
       <properties>
 	<native.os>Windows</native.os>
-	<native.path>lib/jzmq.dll</native.path>
+	<native.path>lib/${project.artifactId}.dll</native.path>
 	<!-- Use platform-specific path separators here: -->
 	<native.library-path>lib</native.library-path>
       </properties>
@@ -98,7 +98,7 @@
       </activation>
       <properties>
 	<native.os>${os.name}</native.os>
-	<native.path>src/main/c++/.libs/libjzmq.dylib</native.path>
+	<native.path>src/main/c++/.libs/lib${project.artifactId}.dylib</native.path>
 	<!-- Use platform-specific path separators here: -->
 	<native.library-path>src/main/c++/.libs/</native.library-path>
       </properties>

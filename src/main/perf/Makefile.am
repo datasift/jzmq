@@ -1,4 +1,4 @@
-jarfile = zmq-perf.jar
+jarfile = zmq4-perf.jar
 jardir = $(datadir)/perf
 
 JZMQ_PERF_JAVA_FILES = \

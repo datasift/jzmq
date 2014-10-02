@@ -21,7 +21,7 @@ AM_INIT_AUTOMAKE(tar-ustar)
 # http://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html
 #
 # libjzmq -version-info
-JLTVER="0:0:0"
+JLTVER="4:0:0"
 AC_SUBST(JLTVER)
 
 # Checks for programs.

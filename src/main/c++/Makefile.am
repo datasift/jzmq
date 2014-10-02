@@ -1,4 +1,4 @@
-jarfile = zmq.jar
+jarfile = zmq4.jar
 jardir = $(datadir)/java
 
 JZMQ_JAVA_FILES = \
@@ -46,19 +46,19 @@ jar_DATA = $(jarfile)
 
 dist_noinst_JAVA = $(JZMQ_JAVA_FILES)
 
-lib_LTLIBRARIES = libjzmq.la
-libjzmq_la_SOURCES = $(JZMQ_CPP_FILES)
+lib_LTLIBRARIES = libjzmq4.la
+libjzmq4_la_SOURCES = $(JZMQ_CPP_FILES)
 
-nodist_libjzmq_la_SOURCES = \
+nodist_libjzmq4_la_SOURCES = \
 	$(JZMQ_H_FILES) \
 	$(JZMQ_HPP_FILES)
 
-libjzmq_la_CXXFLAGS = -Wall
+libjzmq4_la_CXXFLAGS = -Wall
 
 if DISABLE_VERSION
-libjzmq_la_LDFLAGS = -avoid-version
+libjzmq4_la_LDFLAGS = -avoid-version
 else
-libjzmq_la_LDFLAGS = -version-info @JLTVER@
+libjzmq4_la_LDFLAGS = -version-info @JLTVER@
 endif
 
 BUILT_SOURCES = \

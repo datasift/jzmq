@@ -1,4 +1,4 @@
-Name:          jzmq
+Name:          jzmq4
 Version:       4.0.4.1
 Release:       1%{?dist}
 Summary:       The Java ZeroMQ bindings
@@ -73,14 +73,14 @@ This package contains Java Bindings for ZeroMQ related development libraries and
 %doc AUTHORS ChangeLog COPYING COPYING.LESSER NEWS README
 
 # libraries
-%{_libdir}/libjzmq.so*
-/usr/share/java/zmq.jar
-/usr/share/perf/zmq-perf.jar
+%{_libdir}/libjzmq4.so*
+/usr/share/java/zmq4.jar
+/usr/share/perf/zmq4-perf.jar
 
 %files devel
 %defattr(-,root,root,-)
-%{_libdir}/libjzmq.la
-%{_libdir}/libjzmq.a
+%{_libdir}/libjzmq4.la
+%{_libdir}/libjzmq4.a
 
 %changelog
 * Thu Dec 09 2010 Alois Belaska <alois.belaska@gmail.com>
