@@ -1,4 +1,4 @@
-Source: jzmq
+Source: jzmq4
 Section: libs
 Priority: optional
 Maintainer: Alois Belaska <alois.belaska@gmail.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7), libzmq-dev [amd64 i386]|libzmq3-dev [amd64 i386
 Standards-Version: 3.9.1
 Homepage: https://github.com/zeromq/jzmq
 
-Package: jzmq
+Package: jzmq4
 Architecture: any
 Depends: libzmq0 (>= 2.0.10)| libzmq1 (>= 2.0.10), libpgm|libpgm-5.1-0, ${shlibs:Depends}, ${misc:Depends}
 Description: The Java ZeroMQ bindings

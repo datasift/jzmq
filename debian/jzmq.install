@@ -1,2 +1,2 @@
-usr/lib/libjzmq.so*
-usr/share/java/zmq.jar
+usr/lib/libjzmq4.so*
+usr/share/java/zmq4.jar
