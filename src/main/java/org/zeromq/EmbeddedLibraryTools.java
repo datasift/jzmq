@@ -105,7 +105,7 @@ public class EmbeddedLibraryTools {
         StringBuilder url = new StringBuilder();
         url.append("/NATIVE/");
         url.append(getCurrentPlatformIdentifier());
-        url.append("/libjzmq.");
+        url.append("/libjzmq4.");
         URL nativeLibraryUrl = null;
         // loop through extensions, stopping after finding first one
         for (String ext : allowedExtensions) {

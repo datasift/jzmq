@@ -37,7 +37,7 @@ public class ZMQ {
     static {
         // if no embedded native library, revert to loading from java.library.path
         if (!EmbeddedLibraryTools.LOADED_EMBEDDED_LIBRARY)
-            System.loadLibrary("jzmq");
+            System.loadLibrary("jzmq4");
     }
 
     // Values for flags in Socket's send and recv functions.
@@ -512,7 +512,7 @@ public class ZMQ {
         static {
             // if no embedded native library, revert to loading from java.library.path
             if (!EmbeddedLibraryTools.LOADED_EMBEDDED_LIBRARY)
-                System.loadLibrary("jzmq");
+                System.loadLibrary("jzmq4");
         }
 
         private static native void nativeInit();
