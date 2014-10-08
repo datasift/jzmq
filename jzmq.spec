@@ -1,5 +1,5 @@
 Name:          jzmq4
-Version:       4.0.4.1
+Version:       4.0.4.2
 Release:       1%{?dist}
 Summary:       The Java ZeroMQ bindings
 Group:         Applications/Internet
