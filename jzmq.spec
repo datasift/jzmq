@@ -11,11 +11,11 @@ Buildroot:     %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: libzmq-devel >= 4.0.4.1
 BuildRequires: pkgconfig
 BuildRequires: libtool
-BuildRequires: make 
+BuildRequires: make
 BuildRequires: gcc48-c++
 BuildRequires: java-1.7.0-openjdk
 BuildRequires: java-1.7.0-openjdk-devel
-# Requires:      libstdc++, libzmq
+Requires:      libstdc++, libzmq >= 4.0.4.1
 
 %description
 The 0MQ lightweight messaging kernel is a library which extends the
