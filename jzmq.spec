@@ -8,14 +8,14 @@ URL:           http://www.zeromq.org/
 Source:        https://codeload.github.com/datasift/%{name}/tar.gz/v%{version}
 Prefix:        %{_prefix}
 Buildroot:     %{_tmppath}/%{name}-%{version}-%{release}-root
-BuildRequires: libzmq-devel >= 4.0.4.1
+BuildRequires: libzmq-devel >= 4.0.8
 BuildRequires: pkgconfig
 BuildRequires: libtool
 BuildRequires: make
 BuildRequires: gcc48-c++
 BuildRequires: java-1.7.0-openjdk
 BuildRequires: java-1.7.0-openjdk-devel
-Requires:      libstdc++, libzmq >= 4.0.4.1
+Requires:      libstdc++, libzmq >= 4.0.8
 
 %description
 The 0MQ lightweight messaging kernel is a library which extends the
